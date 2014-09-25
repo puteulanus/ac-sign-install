@@ -1,9 +1,11 @@
 #!/bin/bash
 # 修改数据库信息
+cd ${OPENSHIFT_REPO_DIR}
 mv ${OPENSHIFT_REPO_DIR}acfun.php ${OPENSHIFT_REPO_DIR}acfun.bak.php
 sed -e "s/'SAE_MYSQL_HOST_M',''/'SAE_MYSQL_HOST_M',getenv('OPENSHIFT_MYSQL_DB_HOST')/" -e "s/'SAE_MYSQL_PORT',''/'SAE_MYSQL_PORT',getenv('OPENSHIFT_MYSQL_DB_PORT')/" -e "s/'SAE_MYSQL_DB',''/'SAE_MYSQL_DB',getenv('OPENSHIFT_APP_NAME')/" -e "s/'SAE_MYSQL_USER',''/'SAE_MYSQL_USER',getenv('OPENSHIFT_MYSQL_DB_USERNAME')/" -e "s/'SAE_MYSQL_PASS',''/'SAE_MYSQL_PASS',getenv('OPENSHIFT_MYSQL_DB_PASSWORD')/" ${OPENSHIFT_REPO_DIR}acfun.bak.php > ${OPENSHIFT_REPO_DIR}acfun.php
 
 # 初始化数据库
+cd ${OPENSHIFT_REPO_DIR}
 php ${OPENSHIFT_REPO_DIR}install.php
 
 # 删除安装程序
