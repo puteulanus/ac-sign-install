@@ -7,4 +7,4 @@ sed -e "s/'SAE_MYSQL_HOST_M',''/'SAE_MYSQL_HOST_M',getenv('OPENSHIFT_MYSQL_DB_HO
 php ${OPENSHIFT_REPO_DIR}install.php
 
 # 删除安装程序
-rm -f ${OPENSHIFT_REPO_DIR}
+rm -f ${OPENSHIFT_REPO_DIR}install.php
