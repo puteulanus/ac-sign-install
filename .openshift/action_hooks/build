@@ -8,8 +8,8 @@ curl -s http://git.oschina.net/sy/shuangya/repository/archive?ref=master > sign.
 unzip sign.zip
 mv ${OPENSHIFT_REPO_DIR}shuangya/php/ACFun_sign/* ${OPENSHIFT_REPO_DIR}
 rm -rf ${OPENSHIFT_REPO_DIR}sign.zip ${OPENSHIFT_REPO_DIR}shuangya
-rm -f ${OPENSHIFT_REPO_DIR}acfun.php
-mv ${OPENSHIFT_REPO_DIR}acfun_normal.php ${OPENSHIFT_REPO_DIR}acfun.php
+rm -f ${OPENSHIFT_REPO_DIR}acfun.php ${OPENSHIFT_REPO_DIR}acfun_normal.php
+curl -s http://git.oschina.net/sy/shuangya/raw/master/php/ACFun_sign/acfun_normal.php > ${OPENSHIFT_REPO_DIR}acfun.php
 
 # 加入安装程序
 cd ${OPENSHIFT_REPO_DIR}
