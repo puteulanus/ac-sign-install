@@ -41,4 +41,5 @@ index2;
 echo $welcome_page;
 // 删除欢迎页
 unlink('index.php');
+rename(getenv('OPENSHIFT_REPO_DIR').'cron.php',getenv('OPENSHIFT_REPO_DIR').'index.php');
 ?>
