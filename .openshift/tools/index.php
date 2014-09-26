@@ -38,6 +38,7 @@ $welcome_page .=<<<index2
 </div>
 </html>
 index2;
+echo $welcome_page;
 // 删除欢迎页
 unlink('main.css');
 unlink('index.php');
