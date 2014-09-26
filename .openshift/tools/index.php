@@ -376,7 +376,7 @@ index;
 $manage_url = 'https://'.getenv('OPENSHIFT_APP_DNS').'/'.$s.'.php';
 $welcome_page .= '<a href="'.$manage_url.'">'.$manage_url.'</a>';
 $welcome_page .=<<<index2
-<br><font color="#FF0000">请记下这个地址，一旦此页面被关闭它不会再出现</font></br>使用方法：</br>参数type指定操作类型，可以是add【增加用户】或者del【删除用户】</br>type为add时可以用参数username和password指定用户名密码，程序会自动获取cookie加入用户列表，也可以用参数userauth和usersha1指定cookie的两个关键片段，直接加入用户。</br>参数type为del时需要带有参数id来指明需要删除的用户的id。</br>不加参数访问为查看用户列表，删除用户需要的用户id可以在这里获得。</br>示例：增加一个用户名为admin，密码为default的用户，只需要访问：</br>https://管理地址?type=add&username=admin&passwprd=default</p>
+<br><font color="#FF0000">请记下这个地址，一旦此页面被关闭它不会再出现</font></br>使用方法：</br>参数type指定操作类型，可以是add【增加用户】或者del【删除用户】</br>type为add时可以用参数username和password指定用户名密码，程序会自动获取cookie加入用户列表，也可以用参数auth和sha1指定cookie的两个关键片段，直接加入用户。</br>参数type为del时需要带有参数id来指明需要删除的用户的id。</br>不加参数访问为查看用户列表，删除用户需要的用户id可以在这里获得。</br>示例：增加一个用户名为admin，密码为default的用户，只需要访问：</br>https://管理地址?type=add&username=admin&password=default</p>
     </div>
   </div>
 </div>
