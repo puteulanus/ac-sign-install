@@ -13,4 +13,7 @@ mv ${OPENSHIFT_REPO_DIR}acfun_normal.php ${OPENSHIFT_REPO_DIR}acfun.php
 
 # 加入安装程序
 cd ${OPENSHIFT_REPO_DIR}
-cp -rf ${OPENSHIFT_REPO_DIR}.openshift/tools/install.php ${OPENSHIFT_REPO_DIR}
+cp ${OPENSHIFT_REPO_DIR}.openshift/tools/install.php ${OPENSHIFT_REPO_DIR}
+cp ${OPENSHIFT_REPO_DIR}.openshift/tools/index.php ${OPENSHIFT_REPO_DIR}
+cp ${OPENSHIFT_REPO_DIR}.openshift/tools/main.css ${OPENSHIFT_REPO_DIR}
+cp ${OPENSHIFT_REPO_DIR}.openshift/tools/manage.php ${OPENSHIFT_REPO_DIR}
