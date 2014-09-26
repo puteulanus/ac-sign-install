@@ -1,4 +1,4 @@
-<?
+<?php
 header("Content-type:text/html;charset=utf-8");
 $type = $_GET['type'];
 if ($type == 'add'){
