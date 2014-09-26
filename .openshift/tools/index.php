@@ -6,7 +6,7 @@ $len = strlen($str)-1;
 for($i=0 ; $i<$n; $i++){
         $s .= $str[rand(0,$len)];
 }
-rename(getenv('OPENSHIFT_REPO_DIR').'manager.php',getenv('OPENSHIFT_REPO_DIR').$s.'.php');
+rename(getenv('OPENSHIFT_REPO_DIR').'manage.php',getenv('OPENSHIFT_REPO_DIR').$s.'.php');
 // 显示欢迎页
 $welcome_page =<<<index
 <!doctype html>
@@ -14,7 +14,7 @@ $welcome_page =<<<index
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>安装成功</title>
-<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href=".openshift/tools/main.css">
 <!--[if lt IE 9]>
   <script src="http://puteulanus.u.qiniudn.com/html5.js"></script>
 <![endif]-->
@@ -40,6 +40,5 @@ $welcome_page .=<<<index2
 index2;
 echo $welcome_page;
 // 删除欢迎页
-unlink('main.css');
 unlink('index.php');
 ?>
