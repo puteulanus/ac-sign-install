@@ -16,3 +16,6 @@ cd ${OPENSHIFT_REPO_DIR}
 cp ${OPENSHIFT_REPO_DIR}.openshift/tools/install.php ${OPENSHIFT_REPO_DIR}
 cp ${OPENSHIFT_REPO_DIR}.openshift/tools/index.php ${OPENSHIFT_REPO_DIR}
 cp ${OPENSHIFT_REPO_DIR}.openshift/tools/manage.php ${OPENSHIFT_REPO_DIR}
+
+# 加入外部Cron入口
+cp ${OPENSHIFT_REPO_DIR}.openshift/tools/cron.php ${OPENSHIFT_REPO_DIR}
